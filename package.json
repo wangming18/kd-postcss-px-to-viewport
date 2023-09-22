@@ -1,15 +1,14 @@
 {
   "name": "kd-postcss-px-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "author": "wangming18",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:evrone/kd-postcss-px-to-viewport.git"
+    "url": "git@github.com:wangming18/kd-postcss-px-to-viewport.git"
   },
-  "bugs": "https://github.com/evrone/kd-postcss-px-to-viewport/issues",
-  "homepage": "https://github.com/evrone/kd-postcss-px-to-viewport",
+  "homepage": "https://github.com/wangming18/kd-postcss-px-to-viewport/blob/master/README.md",
   "main": "index.js",
   "keywords": [
     "css",
@@ -24,14 +23,10 @@
     "postcss",
     "postcss-plugin"
   ],
-  "scripts": {
-    "test": "jest spec/*.spec.js"
-  },
   "dependencies": {
     "object-assign": ">=4.0.1"
   },
   "devDependencies": {
-    "jest": "^25.4.0",
     "postcss": ">=5.0.2"
   },
   "peerDependencies": {

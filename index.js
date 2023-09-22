@@ -25,7 +25,7 @@ var defaults = {
 var ignoreNextComment = 'px-to-viewport-ignore-next';
 var ignorePrevComment = 'px-to-viewport-ignore';
 
-module.exports = postcss.plugin('kd-postcss-px-to-viewport', function (options) {
+module.exports = postcss.plugin('kd-kd-postcss-px-to-viewport', function (options) {
   var opts = objectAssign({}, defaults, options);
 
   checkRegExpOrArray(opts, 'exclude');
@@ -39,6 +39,10 @@ module.exports = postcss.plugin('kd-postcss-px-to-viewport', function (options) 
     css.walkRules(function (rule) {
       // Add exclude option to ignore some files like 'node_modules'
       var file = rule.source && rule.source.input.file;
+
+      if (typeof opts.viewportWidth === 'function') {
+        opts.viewportWidth = opts.viewportWidth(file)
+      }
 
       if (opts.include && file) {
         if (Object.prototype.toString.call(opts.include) === '[object RegExp]') {
