@@ -1,7 +1,7 @@
 {
   "name": "kd-postcss-px-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "wangming18",
   "license": "MIT",
   "repository": {
@@ -27,9 +27,9 @@
     "object-assign": ">=4.0.1"
   },
   "devDependencies": {
-    "postcss": ">=5.0.2"
+    "postcss": ">=8.4.14"
   },
   "peerDependencies": {
-    "postcss": ">=5.0.2"
+    "postcss": ">=8.4.14"
   }
 }
